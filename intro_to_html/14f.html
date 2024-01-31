@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .img-bar{
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      background-color: rgb(30, 29, 29);
+      padding-top: 20px;
+      padding-right: 12px;
+      padding-left: 12px;
+    }
+    .img-1,.img-2,.img-3{
+      height: 50px;
+      width: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .img-box{
+      padding-bottom: 10px;
+
+    }
+    .auther-bar{
+      background-color: rgb(54, 54, 54);
+      color: rgb(143, 143, 143);
+      position: fixed;
+      top: 0;
+      left: 74px;
+      bottom: 0;
+      width: 250px;
+    }
+    .info{
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+      padding: 22px;
+
+    }
+    .info-d,.sym{
+      color: rgb(212, 212, 212);
+      font-weight: bold;
+    }
+    .hashtag{
+      padding: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="img-bar">
+      <div class="img-box"><img class="img-1" src="cat.jpg" alt="img"></div>
+      <div class="img-box"><img class="img-2" src="cat2.jpg" alt="img"></div>
+      <div class="img-box"><img class="img-3" src="dog.jpg" alt="img"></div>
+    </div>
+    <div class="auther-bar">
+      <div class="info">
+        <div class="info-d">INFO</div>
+        <div class="sym">+</div>
+      </div>
+      <div class="hashtag"># new-videos</div>
+      <div class="hashtag"># updates</div>
+      <div class="hashtag"># faq</div>
+    </div>
+  </div>
+</body>
+</html>

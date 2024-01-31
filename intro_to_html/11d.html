@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .grid-box {
+      display: grid;
+      grid-template-columns: 200px 200px 200px;
+      column-gap: 12px;
+      margin-top: 12px;
+      margin-left: 12px;
+    }
+
+    .container {
+      font-family: Arial, Helvetica, sans-serif;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .desc-box {
+      margin-left: 8px;
+    }
+
+    .name {
+      font-weight: bold;
+      margin-top: 15px;
+      margin-bottom: 9px;
+    }
+
+    .m-frd {
+      width: 100%;
+      height: 20px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .friend {
+      color: rgb(96, 96, 96);
+      font-size: 14px;
+    }
+
+    .friend-grid {
+      display: grid;
+      grid-template-columns: 20px 1fr;
+      column-gap: 5px;
+      align-items: center;
+    }
+
+    .btn {
+      background-color: rgb(11, 86, 236);
+      color: white;
+      border: none;
+      padding: 6px 17px;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid-box">
+    <div class="container">
+      <div class="image-box">
+        <img class="image" src="cat.jpg" alt="img">
+      </div>
+      <div class="desc-box">
+        <p class="name">Oliver</p>
+        <div class="friend-grid">
+          <div class="friend-img-box">
+            <img class="m-frd" src="dog2.jpg" alt="friend">
+          </div>
+          <div class="friend-box">
+            <p class="friend">2 mutual friend</p>
+          </div>
+        </div>
+        <button class="btn">Add Friend</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="image-box">
+        <img class="image" src="cat2.jpg" alt="img">
+      </div>
+      <div class="desc-box">
+        <p class="name">Mimi</p>
+        <div class="friend-grid">
+          <div class="friend-img-box">
+            <img class="m-frd" src="dog2.jpg" alt="friend">
+          </div>
+          <div class="friend-box">
+            <p class="friend">3 mutual friend</p>
+          </div>
+        </div>
+        <button class="btn">Add Friend</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="image-box">
+        <img class="image" src="dog.jpg" alt="img">
+      </div>
+      <div class="desc-box">
+        <p class="name">Rex</p>
+        <div class="friend-grid">
+          <div class="friend-img-box">
+            <img class="m-frd" src="dog2.jpg" alt="friend">
+          </div>
+          <div class="friend-box">
+            <p class="friend">4 mutual friend</p>
+          </div>
+        </div>
+        <button class="btn">Add Friend</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

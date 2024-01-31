@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 200px 200px 200px;
+      column-gap: 12px;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+      box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+    }
+
+    .img-box>img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .name {
+      font-weight: bold;
+      margin: 4px;
+    }
+
+    .desc {
+      margin-top: 12px;
+      margin-left: 8px;
+      margin-bottom: 8px;
+    }
+
+    .frd-box {
+      display: grid;
+      grid-template-columns: 20px 1fr;
+      align-items: center;
+      column-gap: 5px;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+
+    .frd-img>img {
+      width: 100%;
+      height: 20px;
+      border-radius: 50%;
+    }
+
+    .frd-about>div {
+      color: rgb(96, 96, 96);
+      font-size: 12px;
+    }
+
+    .btn {
+      background-color: rgb(11, 86, 236);
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="container">
+      <div class="img-box">
+        <img src="cat.jpg" alt="img">
+      </div>
+      <div class="desc">
+        <div class="name">Oliver</div>
+        <div class="frd-box">
+          <div class="frd-img">
+            <img src="dog2.jpg" alt="img">
+          </div>
+          <div class="frd-about">
+            <div>2 mutual friend</div>
+          </div>
+        </div>
+        <button class="btn">Add friend</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="img-box">
+        <img src="cat2.jpg" alt="img">
+      </div>
+      <div class="desc">
+        <div class="name">Oliver</div>
+        <div class="frd-box">
+          <div class="frd-img">
+            <img src="dog2.jpg" alt="img">
+          </div>
+          <div class="frd-about">
+            <div>2 mutual friend</div>
+          </div>
+        </div>
+        <button class="btn">Add friend</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="img-box">
+        <img src="dog.jpg" alt="img">
+      </div>
+      <div class="desc">
+        <div class="name">Oliver</div>
+        <div class="frd-box">
+          <div class="frd-img">
+            <img src="dog2.jpg" alt="img">
+          </div>
+          <div class="frd-about">
+            <div>2 mutual friend</div>
+          </div>
+        </div>
+        <button class="btn">Add friend</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

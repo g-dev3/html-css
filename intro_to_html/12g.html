@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .box{
+      display: flex;
+      flex-direction: row;
+      margin-top: 30px;
+    }
+    .img-box{
+      width: 80px;
+    }
+    .img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .name {
+      font-weight: bold;
+
+    }
+
+    .about {
+      font-size: 14px;
+      color: rgb(96, 96, 96);
+    }
+
+    .desc {
+      width: 100px;
+    }
+
+    .btn {
+      background-color: rgb(32, 76, 223);
+      color: white;
+      border: none;
+      font-weight: bold;
+      padding: 8px 16px;
+      margin: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="img-box">
+        <img class="img" src="cat.jpg" alt="img">
+      </div>
+      <div class="desc">
+        <div class="name">Oliver</div>
+        <div class="about">the cat</div>
+        <div class="about">Popular</div>
+      </div>
+      <div>
+        <button class="btn">Follow</button>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="img-box">
+        <img class="img" src="cat2.jpg" alt="img">
+      </div>
+      <div class="desc">
+        <div class="name">Mimi</div>
+        <div class="about">Sleepy cat</div>
+        <div class="about">Popular</div>
+      </div>
+      <div>
+        <button class="btn">Follow</button>
+      </div>
+
+    </div>
+    <div class="box">
+      <div class="img-box">
+        <img class="img" src="dog.jpg" alt="img">
+      </div>
+      <div class="desc">
+        <div class="name">Rex</div>
+        <div class="about">Happy Bulldog</div>
+        <div class="about">Popular</div>
+      </div>
+      <div>
+        <button class="btn">Follow</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
